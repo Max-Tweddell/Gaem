@@ -19,12 +19,20 @@ public class Main extends GameApplication {
     }
 
     private GameEntity player;
+    private GameEntity brick;
+
+
+
 
     @Override
     public void initGame() {
         player = Entities.builder()
                 .at(300,300)
                 .viewFromNode(new Rectangle(25, 25, Color.BLUE))
+                .buildAndAttach(getGameWorld());
+        brick = Entities.builder()
+                .at(100,100)
+                .viewFromNode(new Rectangle(25, 25, Color.RED))
                 .buildAndAttach(getGameWorld());
 
     }
@@ -73,6 +81,7 @@ public class Main extends GameApplication {
         textPixels.setTranslateX(50);
         textPixels.setTranslateY(100);
         getGameScene().addUINode(textPixels);
+        textPixels.textProperty().bind(getGameState().intProperty("pixelsMoved").asString());
     }
 
     @Override
