@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0b573a6-6915-4f7b-8402-eca0a50023ff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-26-Sep-2017-15.41.07.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-26-Sep-2017-15.43.56.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiles/efs/user.profile" afterPath="$PROJECT_DIR$/profiles/efs/user.profile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -208,6 +204,24 @@
             <path>
               <item name="Gaem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gaem" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gaem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gaem" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gaem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gaem" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Gaem_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gaem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gaem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,7 +261,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="add_unversioned_files" value="true" />
@@ -319,7 +333,7 @@
       <workItem from="1508141730790" duration="1288000" />
       <workItem from="1508215066462" duration="1806000" />
       <workItem from="1508460245155" duration="423000" />
-      <workItem from="1509673532169" duration="2733000" />
+      <workItem from="1509673532169" duration="2852000" />
     </task>
     <task id="LOCAL-00001" summary="added .gitignore">
       <created>1506394334346</created>
@@ -349,15 +363,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509675830923</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="player can shoot with space">
+      <created>1509677309437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509677309437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12288000" />
+    <option name="totallyTimeSpent" value="12407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -375,7 +395,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -400,7 +420,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added .gitignore" />
     <MESSAGE value="added user input" />
-    <option name="LAST_COMMIT_MESSAGE" value="added user input" />
+    <MESSAGE value="player can shoot with space" />
+    <option name="LAST_COMMIT_MESSAGE" value="player can shoot with space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -802,10 +823,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Gaem:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
