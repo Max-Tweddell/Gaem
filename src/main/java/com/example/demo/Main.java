@@ -1,18 +1,27 @@
 package com.example.demo;
 
 import com.almasb.fxgl.app.GameApplication;
+import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.entity.Entities;
+import com.almasb.fxgl.ecs.Entity;
 import com.almasb.fxgl.entity.GameEntity;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
+import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.settings.GameSettings;
+import javafx.scene.input.MouseButton;
+import javafx.util.Duration;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import java.util.Map;
+import com.almasb.fxgl.physics.PhysicsWorld;
 
 public class Main extends GameApplication {
+
+    private int score = 0;
+
     @Override
     protected void initSettings(GameSettings settings) {
         settings.setTitle("Hello!");
@@ -26,6 +35,22 @@ public class Main extends GameApplication {
 
     @Override
     public void initGame() {
+
+        getMasterTimer().runAtInterval(() -> {
+
+            int numEnemies = getGameState().getInt("enemies");
+
+            if (numEnemies < 7) {
+                getGameWorld().spawn("Enemy",
+                        FXGLMath.random(0, getWidth() - 40),
+                        FXGLMath.random(0, getHeight() / 2 - 40)
+                );
+
+                getGameState().increment("enemies", +1);
+            }
+
+        }, Duration.seconds(1));
+
         player = Entities.builder()
                 .at(300,300)
                 .viewFromNode(new Rectangle(25, 25, Color.BLUE))
@@ -40,6 +65,14 @@ public class Main extends GameApplication {
     @Override
     protected void initInput() {
         Input input = getInput(); // get input service
+
+
+        input.addAction(new UserAction("Shoot") {
+            @Override
+            protected void onActionBegin() {
+                getGameWorld().spawn("Bullet", player.getX(), player.getY());
+            }
+        },KeyCode.SPACE);
 
         input.addAction(new UserAction("Move Right") {
             @Override
@@ -87,6 +120,23 @@ public class Main extends GameApplication {
     @Override
     protected void initGameVars(Map<String, Object> vars) {
         vars.put("pixelsMoved", 0);
+        vars.put("Score", 0);
+        vars.put("enemies", 0);
+    }
+    @Override
+    protected void initPhysics() {
+        PhysicsWorld physicsWorld = getPhysicsWorld();
+
+        physicsWorld.addCollisionHandler(new CollisionHandler(GaemType.BULLET, GaemType.ENEMY) {
+            @Override
+            protected void onCollisionBegin(Entity bullet, Entity enemy) {
+                bullet.removeFromWorld();
+                enemy.removeFromWorld();
+
+                getGameState().increment("enemies", -1);
+                getGameState().increment("Score", +1);
+            }
+        });
     }
     public static void main(String[] args) {
         launch(args);
