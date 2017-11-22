@@ -5,11 +5,13 @@ import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.ecs.Entity;
 import com.almasb.fxgl.entity.GameEntity;
+import com.almasb.fxgl.entity.component.CollidableComponent;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.settings.GameSettings;
 import javafx.scene.input.MouseButton;
+import com.almasb.fxgl.entity.component.CollidableComponent;
 import javafx.util.Duration;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
@@ -43,6 +45,7 @@ public class Main extends GameApplication {
         player = Entities.builder()
                 .at(300, 300)
                 .viewFromNode(new Rectangle(25, 25, Color.BLUE))
+
                 .buildAndAttach(getGameWorld());
         brick = Entities.builder()
                 .at(100, 100)
