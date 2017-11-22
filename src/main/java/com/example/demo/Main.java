@@ -15,7 +15,9 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+
 import java.util.Map;
+
 import com.almasb.fxgl.physics.PhysicsWorld;
 
 public class Main extends GameApplication {
@@ -31,32 +33,17 @@ public class Main extends GameApplication {
     private GameEntity brick;
 
 
-
-
     @Override
     public void initGame() {
 
-        getMasterTimer().runAtInterval(() -> {
-
-            int numEnemies = getGameState().getInt("enemies");
-
-            if (numEnemies < 7) {
-                getGameWorld().spawn("Enemy",
-                        FXGLMath.random(0, getWidth() - 40),
-                        FXGLMath.random(0, getHeight() / 2 - 40)
-                );
-
-                getGameState().increment("enemies", +1);
-            }
-
-        }, Duration.seconds(1));
+        getMasterTimer().runAtInterval(this::run, Duration.seconds(1));
 
         player = Entities.builder()
-                .at(300,300)
+                .at(300, 300)
                 .viewFromNode(new Rectangle(25, 25, Color.BLUE))
                 .buildAndAttach(getGameWorld());
         brick = Entities.builder()
-                .at(100,100)
+                .at(100, 100)
                 .viewFromNode(new Rectangle(25, 25, Color.RED))
                 .buildAndAttach(getGameWorld());
 
@@ -72,7 +59,7 @@ public class Main extends GameApplication {
             protected void onActionBegin() {
                 getGameWorld().spawn("Bullet", player.getX(), player.getY());
             }
-        },KeyCode.SPACE);
+        }, KeyCode.SPACE);
 
         input.addAction(new UserAction("Move Right") {
             @Override
@@ -123,6 +110,7 @@ public class Main extends GameApplication {
         vars.put("Score", 0);
         vars.put("enemies", 0);
     }
+
     @Override
     protected void initPhysics() {
         PhysicsWorld physicsWorld = getPhysicsWorld();
@@ -138,7 +126,21 @@ public class Main extends GameApplication {
             }
         });
     }
+
     public static void main(String[] args) {
         launch(args);
+    }
+
+    private void run() {
+        int numEnemies = getGameState().getInt("enemies");
+
+        if (numEnemies < 7) {
+            getGameWorld().spawn("Enemy",
+                    FXGLMath.random(0, getWidth() - 40),
+                    FXGLMath.random(0, getHeight() / 2 - 40)
+            );
+
+            getGameState().increment("enemies", +1);
+        }
     }
 }
