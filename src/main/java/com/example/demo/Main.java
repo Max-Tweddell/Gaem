@@ -15,6 +15,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.event.Event.*;
 
 import java.util.Map;
 
@@ -31,6 +32,7 @@ public class Main extends GameApplication {
 
     private GameEntity player;
     private GameEntity brick;
+    private int enemyCount = 20;
 
 
     @Override
@@ -57,9 +59,13 @@ public class Main extends GameApplication {
         input.addAction(new UserAction("Shoot") {
             @Override
             protected void onActionBegin() {
+                State.targetX = input.getMouseXUI();
+                State.targetY = input.getMouseYUI();
                 getGameWorld().spawn("Bullet", player.getX(), player.getY());
             }
         }, KeyCode.SPACE);
+
+
 
         input.addAction(new UserAction("Move Right") {
             @Override
@@ -123,6 +129,7 @@ public class Main extends GameApplication {
 
                 getGameState().increment("enemies", -1);
                 getGameState().increment("Score", +1);
+                enemyCount = enemyCount - 1;
             }
         });
     }
@@ -133,6 +140,10 @@ public class Main extends GameApplication {
 
     private void run() {
         int numEnemies = getGameState().getInt("enemies");
+        if (enemyCount == 0) {
+            Text textPixels = new Text(200,200, "you win");
+            getGameScene().addUINode(textPixels);
+        }
 
         if (numEnemies < 7) {
             getGameWorld().spawn("Enemy",

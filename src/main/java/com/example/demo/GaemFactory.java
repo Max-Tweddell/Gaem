@@ -7,23 +7,23 @@ import com.almasb.fxgl.entity.EntityFactory;
 import com.almasb.fxgl.entity.SpawnData;
 import com.almasb.fxgl.entity.component.CollidableComponent;
 import com.almasb.fxgl.entity.control.ProjectileControl;
-import impl.org.controlsfx.tools.rectangle.change.Rectangle2DChangeStrategy;
 import javafx.geometry.Point2D;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-
+import com.example.demo.State;
 
 @SetEntityFactory
 public class GaemFactory implements EntityFactory {
 
     @Spawns("Bullet")
     public Entity newBullet(SpawnData data) {
+        double[] target = State.calculateTarget(data.getX(), data.getY());
         return Entities.builder()
                 .from(data)
                 .type(GaemType.BULLET)
                 .viewFromNodeWithBBox(new Rectangle(10, 2, Color.BLUE))
                 .with(new CollidableComponent(true))
-                .with(new ProjectileControl(new Point2D(0, -1), 300))
+                .with(new ProjectileControl(new Point2D(target[0], target[1]), 500))
                 .build();
     }
 
