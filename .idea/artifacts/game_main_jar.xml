@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="game_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/game_main_jar</output-path>
+    <root id="archive" name="game_main.jar">
+      <element id="module-output" name="game_main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-kotlin/2.9.0/15ef1e0502a2c3d85b601c9f5b4f289521d8f9e2/jackson-module-kotlin-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre8/1.1.4-3/3a4fbf3d403d15b42df34c00d36276f360e39040/kotlin-stdlib-jre8-1.1.4-3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.1.3/bfc9458443666b1be1d66813f3a90a03afa30730/kotlin-reflect-1.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.0/88e7c6220be3b3497b3074d3fc7754213289b987/jackson-core-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl/0.3.9/4b7a4d153475a73cca6a9f240a3ffd28fa29ef25/fxgl-0.3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre7/1.1.4-3/e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c/kotlin-stdlib-jre7-1.1.4-3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jfxtras/jfxtras-common/8.0-r5/cc18325d20deaf0ed09925b04e262c805b658e2/jfxtras-common-8.0-r5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.17/1523b41cc0bb0add072b28b1d2a47394e289fc7/kotlinx-coroutines-core-0.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.0/14fb5f088cc0b0dc90a73ba745bcade4961a3ee3/jackson-databind-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jfxtras/jfxtras-window/8.0-r5/db05f832bc307ffdb0c0bafbd8ea252cc2f0b370/jfxtras-window-8.0-r5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/e3fd8ced1f52c7574af952e2e6da0df8df08eb82/httpcore-4.4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.51/e34fe80c9714240525f665113dd3749415515655/kotlin-stdlib-1.1.51.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/d1577ae15f01ef5438c5afc62162457c00a34713/httpclient-4.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.lukehutch/fast-classpath-scanner/2.4.5/81211adc06489fe1447b7425e864f543dfec29da/fast-classpath-scanner-2.4.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

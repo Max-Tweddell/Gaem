@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.almasb:fxgl:0.3.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl/0.3.9/4b7a4d153475a73cca6a9f240a3ffd28fa29ef25/fxgl-0.3.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almasb/fxgl/0.3.9/ca0b17ed1dcd4340f2b736baa2e139f3c6a1342a/fxgl-0.3.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

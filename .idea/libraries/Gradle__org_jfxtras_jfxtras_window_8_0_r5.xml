@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jfxtras:jfxtras-window:8.0-r5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jfxtras/jfxtras-window/8.0-r5/db05f832bc307ffdb0c0bafbd8ea252cc2f0b370/jfxtras-window-8.0-r5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jfxtras/jfxtras-window/8.0-r5/6e3a1260a5e2ded11157ccbad5b4eb2b809cacdb/jfxtras-window-8.0-r5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
